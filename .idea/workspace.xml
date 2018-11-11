@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b42483e-326d-423e-93ea-4a23857182ad" name="Default" comment="">
+    <list default="true" id="2b42483e-326d-423e-93ea-4a23857182ad" name="Default" comment="-changes done in template&#10;-requirements added&#10;-v1">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippet_twitter.txt" beforeDir="false" afterPath="$PROJECT_DIR$/snippet_twitter.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/tooplate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/tooplate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/dash-bg-oulu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/h.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/h.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SNIPPET_SEARCH/LDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/SNIPPET_SEARCH/LDA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippet_twitter.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/h.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,31 +23,10 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="snippet_Instance.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/snippet_Instance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="170">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tfIdf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SNIPPET_SEARCH/tfIdf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,17 +55,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/snippet_twitter.txt" />
-        <option value="$PROJECT_DIR$/SNIPPET_SEARCH/LDA.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/SNIPPET_SEARCH/snippet_search.py" />
         <option value="$PROJECT_DIR$/SNIPPET_SEARCH/snippet_wordcloud.py" />
         <option value="$PROJECT_DIR$/static/css/tooplate.css" />
         <option value="$PROJECT_DIR$/templates/chart.js" />
         <option value="$PROJECT_DIR$/templates/chart.html" />
         <option value="$PROJECT_DIR$/SNIPPET_SEARCH/tfIdf.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/snippet_Instance.py" />
+        <option value="$PROJECT_DIR$/SNIPPET_SEARCH/LDA.py" />
         <option value="$PROJECT_DIR$/templates/template.html" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -109,18 +90,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="Thesis webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Thesis webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Thesis webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Thesis webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="SNIPPET_SEARCH" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Thesis webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Thesis webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bitbucket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitbucket" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,22 +233,41 @@
       <option name="presentableId" value="Default" />
       <updated>1540538909838</updated>
     </task>
+    <task id="LOCAL-00001" summary="UI design modified">
+      <created>1541896921505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541896921505</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32885906" />
-      <window_info anchor="right" x="0" y="0" width="354" height="676" id="Documentation" order="5" side_tool="true" visible="true" weight="0.21915168" />
+      <window_info anchor="right" x="0" y="0" width="354" height="676" id="Documentation" order="5" side_tool="true" weight="0.21915168" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32885906" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32885906" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32885906" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49798658" visible="true" weight="0.26028278" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49798658" visible="true" weight="0.26349613" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" sideWeight="0.50201344" side_tool="true" weight="0.24742931" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -288,7 +278,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +311,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UI design modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI design modified" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -634,24 +627,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SNIPPET_SEARCH/LDA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webenv/Lib/site-packages/wordcloud/wordcloud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="299" selection-start-line="299" selection-end-line="299" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -681,8 +660,8 @@
     <entry file="file://$PROJECT_DIR$/templates/chart.html" />
     <entry file="file://$PROJECT_DIR$/SNIPPET_SEARCH/tfIdf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+        <state relative-caret-position="286">
+          <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -691,7 +670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/snippet_Instance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="-258">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -701,15 +680,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="101" column="66" selection-start-line="101" selection-start-column="66" selection-end-line="101" selection-end-column="66" />
+        <state relative-caret-position="170">
+          <caret line="103" column="66" lean-forward="true" selection-start-line="103" selection-start-column="66" selection-end-line="103" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SNIPPET_SEARCH/LDA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+        <state relative-caret-position="170">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

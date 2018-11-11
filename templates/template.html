@@ -79,7 +79,6 @@
 
                 <div class="tm-col tm-col-small">
                     <div class="bg-white tm-block h-100">
-                        
                         <table border="1" class="dataframe">
                             <tbody>
                             <th>Input</th>
@@ -103,10 +102,10 @@
                 <div class="tm-col tm-col-big1">
                     <div class="bg-white tm-block h-100">
                         <h2 class="tm-block-title">Event List</h2>
-                        {{lda_topics}}
-                        <!--<h2 class="tm-block-title">TF-IDF topics</h2>
+                        <!--{{lda_topics}}
+                        <h2 class="tm-block-title">TF-IDF topics</h2>
                         {{tf_Idf_topics}}-->
-                        
+
                          <table border="1" class="dataframe1">
                             <tbody>
                             <tr></tr>
@@ -124,8 +123,9 @@
                     <div class="bg-white tm-block h-100">
                         <div class="row">
                             <div class="col-8">
-                                <h2 class="tm-block-title d-inline-block">wordcloud graph</h2>
-                                <img src="{{ user_image }}" alt="User Image" width="550px" height="550px">
+                                <h2 class="tm-block-title d-inline-block">Event presented as wordcloud</h2>
+                                <img src="{{ user_image }}" alt=" " width="480px" height="480px">
+
                             </div>
                         </div>
                     </div>
@@ -135,11 +135,11 @@
                     <div class="bg-white tm-block h-100">
                         <div class="row">
                             <div class="col-12">
-                            	<div>
+                            	<!--<div>
                             		<h2 class="tm-block-title d-inline-block">line chart</h2>
-                            	</div>
+                            	</div>-->
                                 <canvas id="myChart" width="600" height="400"></canvas>
-                                <p id="caption">The chart is displaying a simple line chart.</p>
+                                <p id="caption">The chart is displaying top 9 highest frequent terms</p>
                                 <script>
                                     var ctx = document.getElementById("myChart").getContext('2d');
                                     var myChart = new Chart(ctx, {

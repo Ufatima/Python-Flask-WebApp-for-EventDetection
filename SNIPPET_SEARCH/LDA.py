@@ -33,7 +33,6 @@ class lda_modeling(object):
             topics.append(topic)
         return topics
 
-
     def generate_topic(self, doc_complete):
         lemma = WordNetLemmatizer()
         normalized_texts = []
@@ -41,6 +40,7 @@ class lda_modeling(object):
             doc = doc.replace("#", "").replace("_", " ")  # Removing HASH symbol
             doc = re.sub(r'[^\x00-\x7f]', r'', doc)  # Removing the Hex characters(emoji)
             stop_free = " ".join([i for i in doc.lower().split() if i not in stopwords])
+            stop_free = " ".join([i for i in stop_free.lower().split() if i not in stopwords_list])
             # removing punctuations
             text = re.sub(r'[^a-zA-Z0-9@\S]', ' ', stop_free)
             remove_pun = str.maketrans({key: None for key in punctuation})
@@ -69,7 +69,7 @@ class lda_modeling(object):
         lda_W = lda_model.transform(tf)
         lda_H = lda_model.components_
 
-        no_top_words = 4
+        no_top_words = 5
         no_top_documents = 3
         lda_topic = self.display_topics(lda_H, lda_W, tf_feature_names, documents, no_top_words, no_top_documents)
         return lda_topic
