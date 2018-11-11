@@ -11,19 +11,20 @@
     <link rel="stylesheet" href="{{ url_for('static',    filename='css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',    filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',    filename='css/tooplate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/form.css') }}">
   </head>
 
  <body id="reportsPage">
     <div class="" id="home">
         <div class="container">
-            <!-- nav menu row -->
+            <!-- nav menu row
             <div class="row">
                 <div class="col-12"> 
                     <nav class="navbar navbar-expand-xl navbar-light bg-light">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                <!-- user Input -->
+                                
                                     <form action = "http://localhost:5000/result" method = "POST">
                                       <input type="text" placeholder="Eventname" name="username">
                                       <input type="date" placeholder="date" name="date">
@@ -35,16 +36,53 @@
                         </div>
                     </nav>
                 </div>
+            </div> -->
+
+            
+            <!--search form design-->
+            <div class="row">
+            	<div class="col-12">
+            		<div class="s002">
+			            <form action = "http://localhost:5000/result" method = "POST">
+			            	<fieldset> <legend>Event Detection and Visualization</legend></fieldset>
+			            	<div class="inner-form">
+			            		<div class="input-field first-wrap">
+			            			<input id="search" type="text" placeholder="Write Event Name" name="username" />
+			            		</div>
+
+			            		<div class="input-field second-wrap">
+			            			<div class="icon-wrap">
+			            				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			            					<path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
+			            				</svg>
+			            			</div>
+			            			<input class="datepicker" id="depart" type="date" placeholder="Pick a date" name="date" />
+			            		</div>
+
+			            		<div class="input-field third-wrap">
+			            			<input type="number" placeholder="Number of Snippets" name="quantity" min="1" max="15" />
+			            		</div>
+
+			            		<div class="input-field fifth-wrap">
+			            			<button class="btn-search" type="submit">SEARCH</button>
+			            		</div>
+			            	</div>
+			            </form>
+			        </div>
+	            </div>
             </div>
+
+
 
             <!-- body row -->
             <div class="row tm-content-row tm-mt-big">
 
-                <div class="tm-col tm-col-big">
+                <div class="tm-col tm-col-small">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title">Input</h2>
-                        <table border="1">
+                        
+                        <table border="1" class="dataframe">
                             <tbody>
+                            <th>Input</th>
                             <tr>
                                 <th> Term </th>
                                 <td>{{a}}</td>
@@ -62,21 +100,32 @@
                     </div>
                 </div>
 
-                <div class="tm-col tm-col-big">
+                <div class="tm-col tm-col-big1">
                     <div class="bg-white tm-block h-100">
-                        <h2 class="tm-block-title">LDA topics</h2>
+                        <h2 class="tm-block-title">Event List</h2>
                         {{lda_topics}}
-                        <h2 class="tm-block-title">TF-IDF topics</h2>
-                        {{tf_Idf_topics}}
+                        <!--<h2 class="tm-block-title">TF-IDF topics</h2>
+                        {{tf_Idf_topics}}-->
+                        
+                         <table border="1" class="dataframe1">
+                            <tbody>
+                            <tr></tr>
+                            {% for row  in lda_topics %}
+                            	<tr>
+	                                <td>{{row}}</td>
+	                            </tr>
+	                           {% endfor %}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
-                <div class="tm-col tm-col-big">
+                <div class="tm-col tm-col-big2">
                     <div class="bg-white tm-block h-100">
                         <div class="row">
                             <div class="col-8">
                                 <h2 class="tm-block-title d-inline-block">wordcloud graph</h2>
-                                <img src="{{ user_image }}" alt="User Image" width="600px" height="550px">
+                                <img src="{{ user_image }}" alt="User Image" width="550px" height="550px">
                             </div>
                         </div>
                     </div>
@@ -85,8 +134,10 @@
                   <div class="tm-col tm-col-big">
                     <div class="bg-white tm-block h-100">
                         <div class="row">
-                            <div class="col-8">
-                                 <h2 class="tm-block-title d-inline-block">line chart</h2>
+                            <div class="col-12">
+                            	<div>
+                            		<h2 class="tm-block-title d-inline-block">line chart</h2>
+                            	</div>
                                 <canvas id="myChart" width="600" height="400"></canvas>
                                 <p id="caption">The chart is displaying a simple line chart.</p>
                                 <script>

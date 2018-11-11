@@ -5,6 +5,9 @@ COLOR CODES
   Light Gray: #E6E6E6
   Blue: #0062BB 
 */
+#myChart{
+  margin-top: 78px;
+}
 
 html {
   font-size: 17px;
@@ -16,7 +19,7 @@ body {
 }
 
 body {
-  background-image: url(../img/dash-bg-oulu.jpg);
+  background-image: url(../img/Searchs_002.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -32,6 +35,40 @@ a:hover,
 a:focus {
   text-decoration: none;
 }
+
+table.dataframe, .dataframe th, .dataframe td {
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align:left;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+}
+
+table.dataframe1, .dataframe1 th, .dataframe1 td {
+  border: none;
+  border-bottom: 1px solid #B70101;
+  border-top: 1px solid #B70101;
+  border-collapse: collapse;
+  text-align:left;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+  width: 80%;
+  margin-left: 65px;
+}
+
+.th {
+    background-color: #77dd77;
+    color: white;
+    font-size: 15px;
+}
+
+tr:nth-child(even)   { background-color:#eee; }
+tr:nth-child(odd)  { background-color:#fff; }
+
+tr:hover            { background-color: #ffff99;}
 
 .navbar-brand {
   display: flex;
@@ -67,7 +104,7 @@ a:focus {
 }
 
 .tm-mt-big {
-  margin-top: 70px;
+  margin-top: 45px;
 }
 
 .tm-mt-small {
@@ -110,7 +147,7 @@ a:focus {
 }
 
 .tm-content-row {
-  justify-content: space-between;
+  /*justify-content: space-between; */
   margin-left: -20px;
   margin-right: -20px; /* To offset col padding */
 }
@@ -121,12 +158,27 @@ a:focus {
   margin-bottom: 50px;
 }
 
-.tm-col-big {
-  width: 49%;
+.tm-col-big1 {
+  width: 54%;
 }
 
+.tm-col-big2 {
+  width: 44%;
+  margin-left: 132px;
+}
+
+.tm-col-big {
+  width: 38%;
+}
+
+.col-8 img{
+margin-left: -10px;
+}
+
+
 .tm-col-small {
-  width: 21.95%;
+  width: 27.95%;
+  margin-left: 132px;
 }
 
 .tm-link-black {
