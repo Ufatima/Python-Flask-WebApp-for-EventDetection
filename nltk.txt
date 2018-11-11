@@ -1,0 +1,5 @@
+wordnet
+PorterStemmer
+stopwords
+pros_cons
+reuters
