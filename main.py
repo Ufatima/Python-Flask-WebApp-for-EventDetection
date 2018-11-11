@@ -11,7 +11,7 @@ looker = SnippetInstance()
 # It represents the default page
 @app.route("/")
 def template():
-    return render_template("../templates/template.html")
+    return render_template("template.html")
 
 @app.route("/result", methods=['POST', 'GET'])
 def result():
@@ -52,4 +52,4 @@ def add_header(response):
 # This current file will represent my web application.
 if __name__ == "__main__":
     app.config['TEMPLATES_AUTO_RELOAD'] = True
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True)
