@@ -1,5 +1,4 @@
-# thesis_webapp
-Thesis web app
+# Real time Event Detection 
 
 Real time Event detection using social media analytics.
 
