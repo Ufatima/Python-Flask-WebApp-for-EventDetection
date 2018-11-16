@@ -17,28 +17,6 @@
  <body id="reportsPage">
     <div class="" id="home">
         <div class="container">
-            <!-- nav menu row
-            <div class="row">
-                <div class="col-12"> 
-                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mx-auto">
-                                <li class="nav-item">
-                                
-                                    <form action = "http://localhost:5000/result" method = "POST">
-                                      <input type="text" placeholder="Eventname" name="username">
-                                      <input type="date" placeholder="date" name="date">
-                                      <input type="number" placeholder="NumberOfSnippet" name="quantity" min="1" max="15">
-                                      <input type = "submit" value = "Go" />
-                                    </form>   
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div> -->
-
-            
             <!--search form design-->
             <div class="row">
             	<div class="col-12">
@@ -47,20 +25,30 @@
 			            	<fieldset> <legend>Event Detection and Visualization</legend></fieldset>
 			            	<div class="inner-form">
 			            		<div class="input-field first-wrap">
-			            			<input id="search" type="text" placeholder="Write Event Name" name="username" />
+			            			<input id="search" type="text" placeholder="Write Event Name" name="term" />
 			            		</div>
 
-			            		<div class="input-field second-wrap">
+			            		<!--<div class="input-field second-wrap">
 			            			<div class="icon-wrap">
 			            				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
 			            					<path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
 			            				</svg>
 			            			</div>
-			            			<input class="datepicker" id="depart" type="date" placeholder="Pick a date" name="date" />
+			            			<input class="datepicker" id="depart" type="date" placeholder="Start date" name="date" />
 			            		</div>
 
+                                <div class="input-field second-wrap">
+			            			<div class="icon-wrap">
+			            				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			            					<path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
+			            				</svg>
+			            			</div>
+                                    <input class="datepicker" id="depart1" type="date" placeholder="End date" name="Enddate" />
+			            		</div>-->
+
+
 			            		<div class="input-field third-wrap">
-			            			<input type="number" placeholder="Number of Snippets" name="quantity" min="1" max="15" />
+			            			<input type="number" placeholder="Number of Snippets 3 to 10" name="quantity" min="1" max="10" />
 			            		</div>
 
 			            		<div class="input-field fifth-wrap">
@@ -86,10 +74,14 @@
                                 <th> Term </th>
                                 <td>{{a}}</td>
                             </tr>
-                            <tr>
-                                <th> Date </th>
+                            <!--<tr>
+                                <th> Start Date </th>
                                 <td>{{b}}</td>
                             </tr>
+                            <tr>
+                                <th> End Date </th>
+                                <td>{{d}}</td>
+                            </tr>-->
                             <tr>
                                 <th> Number of snippets </th>
                                 <td>{{c}}</td>
@@ -139,7 +131,7 @@
                             		<h2 class="tm-block-title d-inline-block">line chart</h2>
                             	</div>-->
                                 <canvas id="myChart" width="600" height="400"></canvas>
-                                <p id="caption">The chart is displaying top 9 highest frequent terms</p>
+                                <p id="caption">The chart is displaying highest frequent terms</p>
                                 <script>
                                     var ctx = document.getElementById("myChart").getContext('2d');
                                     var myChart = new Chart(ctx, {

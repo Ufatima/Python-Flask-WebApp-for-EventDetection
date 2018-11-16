@@ -1,12 +1,7 @@
 from __future__ import unicode_literals
-
-import sys
-from itertools import product
-from nltk.corpus import stopwords,wordnet
-import re, csv
+from nltk.corpus import stopwords
+import re
 from string import punctuation
-from nltk.stem import PorterStemmer
-from nltk.corpus import wordnet as wn
 
 with open('twitter_en.txt', 'r') as f:
     stopwords_list = []
@@ -36,12 +31,12 @@ class tf_idf(object):
         text = [w for w in wordlist if w not in pun]
         return text
 
-    def wordListToFreqDict(self, wordlist):
-        wordfreq = [wordlist.count(p) for p in wordlist]
-        return dict(zip(wordlist, wordfreq))
+    def wordListToFreqDict(self, fullwordlist):
+        wordfreq = [fullwordlist.count(p) for p in fullwordlist]
+        return dict(zip(fullwordlist, wordfreq))
 
-    def sortFreqDict(self, freqdict):
-        aux = [(freqdict[key], key) for key in freqdict]
+    def sortFreqDict(self, dictionary):
+        aux = [(dictionary[key], key) for key in dictionary]
         aux.sort()
         aux.reverse()
         return aux
@@ -54,8 +49,6 @@ class tf_idf(object):
         word_list = self.remove_punctuaions(word_list, pun)
         dictionary = self.wordListToFreqDict(word_list)
         sortdict = self.sortFreqDict(dictionary)
-
-
         # extracted top 3 terms considered as an event
         top3_terms = sortdict[:3]
         tfIdf_event = []
@@ -63,7 +56,7 @@ class tf_idf(object):
             tfIdf_event.append(s[1])
         return tfIdf_event
 
-   def generate_tfIdf_frequency_array(self, doc_complete):
+    def generate_tfIdf_frequency_array(self, doc_complete):
         wordlist = []
         for doc in doc_complete:
             doc = doc.replace("#", "").replace("_", " ")  # Removing HASH symbol

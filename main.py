@@ -13,12 +13,12 @@ looker = SnippetInstance()
 def template():
     return render_template("template.html")
 
+
 @app.route("/result", methods=['POST', 'GET'])
 def result():
     if request.method == 'POST':
         user_Input = request.form
-        out_txt = looker.snippets(user_Input['username'], user_Input['date'],
-                                  user_Input['quantity'])
+        out_txt = looker.snippets(user_Input['term'], user_Input['quantity'] )
         topic = looker.generate_topic(out_txt)
         tf_Idf_topic = looker.generate_tfidf_topic(out_txt)
 
@@ -32,12 +32,14 @@ def result():
         sortdict_term_frequency = looker.create_tf_idf_dic(out_txt)
         bar_labels = []
         bar_values = []
-        for s in sortdict_term_frequency[:9]:
+        for s in sortdict_term_frequency[:8]:
             bar_labels.append(s[1])
             bar_values.append(s[0])
 
-        return render_template("template.html", result=out_txt, lda_topics=topic, tf_Idf_topics = tf_Idf_topic, a=user_Input['username'], b=user_Input['date']
-                                  ,c=user_Input['quantity'], user_image = full_filename,  max=17000, labels=bar_labels, values=bar_values)
+        return render_template("template.html", result=out_txt, lda_topics=topic, tf_Idf_topics=tf_Idf_topic,
+                               a=user_Input['term'],
+                               c=user_Input['quantity'], user_image=full_filename, max=17000,
+                               labels=bar_labels, values=bar_values)
 
 
 # No caching at all for API endpoints.
@@ -47,6 +49,7 @@ def add_header(response):
     if 'Cache-Control' not in response.headers:
         response.headers['Cache-Control'] = 'no-store'
     return response
+
 
 # __name__ means this current file. In this case, it will be main.py.
 # This current file will represent my web application.
