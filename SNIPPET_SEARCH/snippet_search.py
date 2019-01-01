@@ -27,10 +27,13 @@ class SNIPPET_SEARCH(object):
             headers, result = self.BingWebSearch(str_input)
             resultjson = json.loads(result)
             s = []
-            with open('snippet_twitter.txt', 'w', encoding="utf-8") as f:
-                for i in range(0, int(number)):
-                    f.writelines(resultjson['webPages']['value'][i]['snippet'] + '\n')
-                    s.append(resultjson['webPages']['value'][i]['snippet'])
+            if resultjson:
+                with open('snippet_twitter.txt', 'w', encoding="utf-8") as f:
+                    for i in range(0, int(number)):
+                        f.writelines(resultjson['webPages']['value'][i]['snippet'] + '\n')
+                        s.append(resultjson['webPages']['value'][i]['snippet'])
+                    return s
+            else:
                 return s
         else:
             print("Invalid Bing Search API subscription key!")
