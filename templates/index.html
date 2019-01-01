@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/tooplate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/form.css') }}">
+  </head>
+
+ <body id="reportsPage">
+    <div class="" id="home">
+        <div class="container">
+            <!--search form design-->
+            <div class="row">
+            	<div class="col-12">
+            		<div class="s002">
+			            <form action = "/result" method = "POST">
+			            	<fieldset> <legend>Event Detection and Visualization</legend></fieldset>
+			            	<div class="inner-form">
+			            		<div class="input-field first-wrap">
+			            			<input id="search" type="text" placeholder="Write Event Name" name="term" />
+			            		</div>
+
+
+			            		<div class="input-field third-wrap">
+			            			<input type="number" placeholder="Number of Snippets 3 to 10" name="quantity" min="1" max="10" />
+			            		</div>
+
+			            		<div class="input-field fifth-wrap">
+			            			<button class="btn-search" type="submit">SEARCH</button>
+			            		</div>
+			            	</div>
+			            </form>
+			        </div>
+	            </div>
+            </div>
+        </div> <!--End of Container-->
+    </div>
+</body>
+</html>

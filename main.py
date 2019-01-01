@@ -11,7 +11,7 @@ looker = SnippetInstance()
 # It represents the default page
 @app.route("/")
 def template():
-    return render_template("template.html")
+    return render_template("index.html")
 
 
 @app.route("/result", methods=['POST', 'GET'])

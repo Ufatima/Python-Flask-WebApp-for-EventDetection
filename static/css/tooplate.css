@@ -157,12 +157,10 @@ tr:hover            { background-color: #ffff99;}
   padding-right: 20px;
   margin-bottom: 50px;
 }
-
 .tm-col-big11 {
   width: 82%;
-  margin-left:132px;
+    margin-left: 132px;
 }
-
 .tm-col-big1 {
   width: 54%;
 }
