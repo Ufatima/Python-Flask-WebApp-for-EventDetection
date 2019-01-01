@@ -56,7 +56,7 @@ class lda_modeling(object):
 
         # LDA can only use raw term counts for LDA because it is a probabilistic graphical model
         no_features = 1000
-        tf_vectorizer = CountVectorizer(max_df=0.95, min_df=3, max_features=no_features, stop_words='english')
+        tf_vectorizer = CountVectorizer(max_df=0.95, min_df=0.03, max_features=no_features, stop_words='english')
         tf = tf_vectorizer.fit_transform(documents)
         tf_feature_names = tf_vectorizer.get_feature_names()
 
