@@ -30,9 +30,10 @@ class SNIPPET_SEARCH(object):
             if resultjson:
                 with open('snippet_twitter.txt', 'w', encoding="utf-8") as f:
                     for i in range(0, int(number)):
-                        f.writelines(resultjson['webPages']['value'][i]['snippet'] + '\n')
-                        s.append(resultjson['webPages']['value'][i]['snippet'])
-                    return s
+                        if len(resultjson['webPages']['value'])>i:
+                            f.writelines(resultjson['webPages']['value'][i]['snippet'] + '\n')
+                            s.append(resultjson['webPages']['value'][i]['snippet'])
+                        return s
             else:
                 return s
         else:
