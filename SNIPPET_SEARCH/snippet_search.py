@@ -33,7 +33,7 @@ class SNIPPET_SEARCH(object):
                         if len(resultjson['webPages']['value'])>i:
                             f.writelines(resultjson['webPages']['value'][i]['snippet'] + '\n')
                             s.append(resultjson['webPages']['value'][i]['snippet'])
-                        return s
+                    return s
             else:
                 return s
         else:
