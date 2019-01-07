@@ -3,7 +3,7 @@ import http.client, urllib.parse, json
 
 class SNIPPET_SEARCH(object):
     def BingWebSearch(self, search):
-        subscriptionKey = "a429f59b225241948333276c10441b53"
+        subscriptionKey = "08da8cd9e11b4524b7cf86374a120a45"
         host = "api.cognitive.microsoft.com"
         path = "/bing/v7.0/search"
         headers = {'Ocp-Apim-Subscription-Key': subscriptionKey}
