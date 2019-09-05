@@ -1,8 +1,8 @@
-# Real time Event Detection 
+# Real time Event Detection from Google/twitter Snippets
 
-Real time Event detection using social media analytics.
-
+### The web application for the project for detecting events from Google/twitter snippets.
 python 3.6
 Flask 
 
-Demo: https://realtime-topic-detection.herokuapp.com/
+## Try it out
+https://realtime-topic-detection.herokuapp.com/
